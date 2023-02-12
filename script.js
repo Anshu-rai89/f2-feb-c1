@@ -6,7 +6,7 @@ let arr = [
   { id: 3, name: "karen", age: "19", marks: 35 },
 ];
 
-//Log student
+//Log student 2
 function logStudent(student) { 
     if( student.marks > 50 ) 
     {
