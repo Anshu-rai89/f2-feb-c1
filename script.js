@@ -42,18 +42,25 @@ function removeFailedStudent() {
   //     }
   //  }
 
+    const passedStudents = arr.filter( function (student) {
+       //condition
+       return student.marks > 50;
+    } )
 
-   arr.forEach(function (item, index) {
-     if(item.marks < 50) {
-      arr.splice(index,1);
-     }
-   })
-  //  for (var i = 0; i<failedStudents.length; i++) {
-  //     arr.splice(i,1);
-  //  }
+    // var index = arr.findIndex( function (student) {
+    //   return student.marks < 50
+    // } )
 
+   
+  //  newArr.forEach(function (item, index) {
+  //    if (item.marks < 50) {
+  //      console.log("removing", index, item);
+  //      newArr.splice(index, 1);
+  //    }
+  //  });
+   
   //Write your code here, just console.log
-  console.log(arr);
+  console.log(passedStudents);
 }
 
 function concatenateArray() {
